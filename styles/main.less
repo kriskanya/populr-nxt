@@ -78,14 +78,35 @@
 }
 
 .columnizer-col {
-  background-color: #bbb;
+  background-color: white;
   padding: 10px 20px;
+}
+
+#cool-header{
+    border-top:3px solid #232323;
+    position: relative;
+    background-color: white;
+    width:100%;
+    overflow: hidden;
+    padding: 13px 0;
+    #cool-header-inner{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        // padding: 0 40px;
+        #pop-logo { float:left; }
+        #pop-links { float:right;  text-align:right!important;margin:0!important; padding:8px 0; }
+    }
 }
 
 // Assets
 .asset-title {
   .headline-text();
   margin: 10px 0;
+  color: #121a20;
+  font-weight: bold;
+  font-family: 'proxima-nova-condensed';
+  font-size: 32px;
 }
 
 .description, .body {
@@ -116,13 +137,13 @@
 .documents {
   margin: 10px auto;
 
-  li { 
+  li {
     margin-bottom: 1em;
 
     a {
       text-decoration: none;
       line-height: 1.2;
-      
+
       i.icon { font-style: normal !important; }
     }
   }
@@ -147,9 +168,9 @@
 /////////////////////////////////////////////////////////////////////////
 // Mobile
 //
-// The Populr mobile reset will handle some of the basics of mobilizing 
-// your theme, such as stacking all of the assets vertically and scaling 
-// them to 100% of the width of their container. However, you'll have to 
+// The Populr mobile reset will handle some of the basics of mobilizing
+// your theme, such as stacking all of the assets vertically and scaling
+// them to 100% of the width of their container. However, you'll have to
 // fine tune the styling to make your theme look really good on mobile
 // devices.
 
