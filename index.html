@@ -26,7 +26,6 @@
     <meta itemprop="defaultBackground" content="/images/background.jpg" data-width="1800" data-height="1800" data-position="c" data-style="fill" data-color="#665b42">
   -->
   <meta itemprop="backgroundContainer" content="#background">
-  <meta itemprop="defaultBackground" content="/images/sms-hero.png" data-width="1140" data-height="500" data-position="se" data-style="fill" data-color="#FFFFFF">
   <!--
     Theme styles
     The Custom style presents Populr's end users with a color picker that sets the @custom-color variable
@@ -41,6 +40,7 @@
 
   <!-- Add any styles your theme requires here -->
   <link rel="stylesheet/less" type="text/css" href="/styles/main.less">
+  <link rel="stylesheet" href="//d3mj9bmiaszlkq.cloudfront.net/styles/app.7b5dbc0a.css">
 
   <!-- This script loads the Populr theming engine. Populr will automatically remove it at runtime. -->
   <script src="http://populr.me/assets/developers/themer.js"></script>
@@ -56,41 +56,45 @@
        prevent issues with quote escaping and invalid markup. -->
   <script id="theme" type="text/x-handlebars-template">
 
-    <div id="cool-header">
-      <div id="cool-header-responsive-problem-solving-div">
-        <div id="cool-header-inner">
-          {{logo max_width=200 max_height=100}}
-          <span class="tagline">
-            <em>The</em> Genetic Testing Resource
-          </span>
+    <header class="navbar">
+        <div class="container">
+            <a class="logo" href="/" title="NextGxDx"><span><em>The</em>
+            Genetic Testing<br>
+            Resource.</span></a>
 
-          <ul class="nav">
-            <li>
-              <a>How it works</a>
-            </li>
-            <li>
-              <a>Security</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-            <li>
-              <a>FAQs</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-            <li>
-              <a>Press</a>
-            </li>
-          <ul>
+            <div>
+                <ul class="nav">
+                    <li><a href="/how-it-works">How it Works</a></li>
+
+                    <li><a href="/security">Security</a></li>
+
+                    <li><a href="/contact">Contact</a></li>
+
+                    <li><a href="/faqs">FAQs</a></li>
+
+                    <li><a href="/about">About</a></li>
+
+                    <li><a href="/press">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="input-group login">
+                <span class="input-group-button"><a class=
+                "button secondary giant" href=
+                "/apps/search/#/login">Login</a></span><span class=
+                "input-group-button"><a class="button giant" href=
+                "/apps/search/#/register">Register</a></span>
+            </div>
+
+            <div class="input-group loggedin">
+                <a class="button giant" href=
+                "/apps/search/#/dashboard">Dashboard</a><a class=
+                "button secondary giant logout" href="#">Logout</a>
+            </div>
         </div>
-      </div>
-     </div>
-    <div id="background">
-      <div id="my-pop-title">{{{title}}}</div>
-    </div>
+    </header>
 
+    <section class="hero"><div class="container"><h1>HIPAA Security &amp; Privacy Policy</h1></div></section>
 
     {{logo max_width=250 max_height=100}}
 
