@@ -68,24 +68,60 @@
 #pop-logo { margin: 20px auto; }
 
 // Pop title
-#pop-title {
-  max-width: 960px;
-  padding: 0 20px;
-  margin: 50px auto;
+#my-pop-title{
+    width: auto;
+    padding: 79px 0;
+    overflow: hidden;
+    text-align: left;
+    border-bottom: 10px solid darken(#F8F8F8,4%);
+}
 
-  .pop-title-text();
-  text-align: center;
+#pop-title {
+    max-width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 0!important;
+    font-size:	60px;
+    font-weight:	700;
+    color:	#323232;
+    line-height:	1.45;
+    #populr > .text-color-over-color(@background-color);
+    position: relative;
+    text-shadow: 2px 3px 1px rgba(0,0,0,.3);
+    filter: progid:DXImageTransform.Microsoft.DropShadow(offX=2,offY=3,color=000000);
 }
 
 .columnizer-col {
-  background-color: #bbb;
+  background-color: white;
   padding: 10px 20px;
+}
+
+#cool-header{
+    border-top:3px solid #232323;
+    position: relative;
+    background-color: white;
+    width:100%;
+    overflow: hidden;
+    padding: 13px 0;
+    background: #19252d;
+    #cool-header-inner{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        // padding: 0 40px;
+        #pop-logo { float:left; }
+        #pop-links { float:right;  text-align:right!important;margin:0!important; padding:8px 0; }
+    }
 }
 
 // Assets
 .asset-title {
   .headline-text();
   margin: 10px 0;
+  color: #121a20;
+  font-weight: bold;
+  font-family: 'proxima-nova-condensed';
+  font-size: 32px;
 }
 
 .description, .body {
@@ -116,13 +152,13 @@
 .documents {
   margin: 10px auto;
 
-  li { 
+  li {
     margin-bottom: 1em;
 
     a {
       text-decoration: none;
       line-height: 1.2;
-      
+
       i.icon { font-style: normal !important; }
     }
   }
@@ -147,9 +183,9 @@
 /////////////////////////////////////////////////////////////////////////
 // Mobile
 //
-// The Populr mobile reset will handle some of the basics of mobilizing 
-// your theme, such as stacking all of the assets vertically and scaling 
-// them to 100% of the width of their container. However, you'll have to 
+// The Populr mobile reset will handle some of the basics of mobilizing
+// your theme, such as stacking all of the assets vertically and scaling
+// them to 100% of the width of their container. However, you'll have to
 // fine tune the styling to make your theme look really good on mobile
 // devices.
 
