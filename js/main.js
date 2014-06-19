@@ -7,3 +7,4 @@
 // $(document).on('pop-initialized', function(){
 //
 // });
+try{Typekit.load();}catch(e){}
