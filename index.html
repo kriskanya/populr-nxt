@@ -14,6 +14,7 @@
   <!-- dummyContentLength: specify how much dummy text appears within each asset -->
   <!-- Value can be set to short, medium or long -->
   <meta itemprop="dummyContentLength" content="medium">
+  <meta name="viewport" content="width=device-width; initial-scale=1">
 
   <!--
     Default background images
@@ -36,9 +37,10 @@
   <script src="https://use.typekit.net/fhm4dtq.js"></script>
 
   <!-- Add any styles your theme requires here -->
-  <link rel="stylesheet/less" type="text/css" href="/styles/main.less">
 
   <link rel="stylesheet" href="https://d3mj9bmiaszlkq.cloudfront.net/styles/app.8c11d1a5.css">
+  <link rel="stylesheet/less" type="text/css" href="/styles/main.less">
+
 
   <!-- This script loads the Populr theming engine. Populr will automatically remove it at runtime. -->
   <script src="http://populr.me/assets/developers/themer.js"></script>
@@ -55,37 +57,17 @@
   <script id="theme" type="text/x-handlebars-template">
 
     <header class="navbar">
-      <div class="container">
+      <div class="container branding">
         <a class="logo" href="https://www.nextgxdx.com" title="NextGxDx">
           <span class="divider-vertical"></span>
           <span>
-                    <em>The</em> Genetic Testing<br>Resource.
+                    <em>The</em>Genetic Testing<br>Resource.
                   </span>
         </a>
 
-        <div>
-          <ul class="nav">
-            <li><a href="https://www.nextgxdx.com/how-it-works">How it Works</a>
-            </li>
-            <li><a href="https://www.nextgxdx.com/security">Security</a>
-            </li>
-            <li><a href="https://www.nextgxdx.com/contact">Contact</a>
-            </li>
-            <li><a href="https://www.nextgxdx.com/faqs">FAQs</a>
-            </li>
-            <li><a href="https://www.nextgxdx.com/about">About</a>
-            </li>
-            <li><a href="https://www.nextgxdx.com/press">Press</a>
-            </li>
-          </ul>
-        </div>
+        <a href="/" title="GeneConnect" class="logo-gc"></a>
 
-        <div class="input-group login"><span class="input-group-button"><a href="https://www.nextgxdx.com/apps/search/#/login" class="button secondary giant">Login</a></span><span class="input-group-button"><a href="https://www.nextgxdx.com/apps/search/#/register" class="button giant">Register</a></span></div>
 
-        <div class="input-group loggedin">
-          <a class="button giant" href="https://www.nextgxdx.com/apps/search/#/dashboard">Dashboard</a>
-          <a class="button secondary giant logout" href="#">Logout</a>
-        </div>
       </div>
     </header>
 

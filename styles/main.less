@@ -200,6 +200,33 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+// custom css
+
+.container {
+  width: 100%;
+  max-width: 960px;
+}
+
+.logo-gc {
+  background-image: url("//d19ro8c33wywio.cloudfront.net/sms-logo@2x.92206b0b.png");
+  background-size: cover;
+  float: right;
+  height: 43px;
+  width: 120px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .logo-gc {
+    display: none;
+  }
+}
+
+.hero {
+  height: 40px;
+  width: 100%;
+}
+
 // End structure
 /////////////////////////////////////////////////////////////////////////
 
